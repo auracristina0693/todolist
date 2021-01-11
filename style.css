@@ -27,11 +27,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
 header h1 {
   width: 350px;
   line-height: 3rem;
+  text-align: center;
 }
 
 .llama {
@@ -45,6 +48,10 @@ header h1 {
   border: none;
   background: white;
   outline: none;
+}
+
+.todo-input {
+  min-width: 200px;
 }
 
 .todo-button {
@@ -116,4 +123,10 @@ header h1 {
 .fall {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
 }
