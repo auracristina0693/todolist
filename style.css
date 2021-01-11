@@ -23,12 +23,28 @@ form {
   align-items: center;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  width: 350px;
+  line-height: 3rem;
+}
+
+.llama {
+  width: 150px;
+}
+
 .todo-input,
 .todo-button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
   background: white;
+  outline: none;
 }
 
 .todo-button {
@@ -62,6 +78,7 @@ form {
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem;
+  transition: all 0.5s ease;
 }
 
 .todo li {
@@ -89,4 +106,14 @@ form {
 .fa-trash,
 .fa-check {
   pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
